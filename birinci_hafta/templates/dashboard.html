@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<header>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dasboard.css') }}">
+</header>
+
+<div class="dashboard-container">
+    <div class="welcome-section">
+        <h2>BlackRose Vardiya Sistemine Hoşgeldiniz</h2>
+        <p>Personel vardiyalarınızı kolayca yönetebilirsiniz</p>
+    </div>
+
+    <div class="quick-actions">
+        <div class="action-buttons">
+            <a href="{{ url_for('personel_ekle') }}" class="action-btn">
+                <i class="bi bi-person-plus-fill"></i> Yeni Çalışan Ekle
+            </a>
+            <a href="{{ url_for('vardiya_olustur') }}" class="action-btn">
+                <i class="bi bi-calendar-plus-fill"></i> Vardiya Oluştur
+            </a>
+            <a href="{{ url_for('raporlar') }}" class="action-btn">
+                <i class="bi bi-file-earmark-bar-graph-fill"></i> Raporları Görüntüle
+            </a>
+            <a href="{{ url_for('ayarlar') }}" class="action-btn">
+                <i class="bi bi-gear-fill"></i> Sistem Ayarları
+            </a>
+        </div>
+    </div>
+
+    <div class="stats-summary">
+        <div class="stat-item">
+            <h3>Aktif Çalışan</h3>
+            <p>24</p>
+        </div>
+        <div class="stat-item">
+            <h3>Bugünkü Vardiya</h3>
+            <p>8</p>
+        </div>
+        <div class="stat-item">
+            <h3>Bekleyen İstekler</h3>
+            <p>3</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
