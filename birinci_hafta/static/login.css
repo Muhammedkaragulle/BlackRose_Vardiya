@@ -1,0 +1,77 @@
+/* Login Sayfası Temel Stilleri */
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.logincss {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logincss h1 {
+    color: #000;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.logincss form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.logincss label {
+    display: block;
+    text-align: left;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.logincss input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+}
+
+.logincss input:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.logincss button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.logincss button:hover {
+    background-color: #333;
+}
+
+/* Header'ın login sayfasında görünmemesi için */
+header {
+    display: none;
+}
